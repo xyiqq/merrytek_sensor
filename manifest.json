@@ -1,0 +1,11 @@
+{
+    "domain": "merrytek_sensor",
+    "name": "迈睿传感器",
+    "codeowners": [
+        "@优诺智能"
+    ],
+    "config_flow": true,
+    "documentation": "https://github.com/your-repo/merrytek_sensor",
+    "iot_class": "local_polling",
+    "version": "1.0.0"
+}

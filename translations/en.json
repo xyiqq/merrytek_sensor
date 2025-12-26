@@ -1,0 +1,32 @@
+{
+    "config": {
+        "step": {
+            "user": {
+                "title": "Add Merrytek Sensor",
+                "description": "Configure Merrytek presence sensor (via TCP-to-Serial gateway)\nAddress format: 1,2,3 or 1-5 or 1,3-5,7",
+                "data": {
+                    "name": "Name",
+                    "host": "Host (TCP-to-Serial device IP)",
+                    "port": "Port",
+                    "device_addresses": "Modbus Addresses (e.g., 1,2,3 or 1-5)",
+                    "sensor_type": "Sensor Type",
+                    "poll_interval": "Poll Interval (seconds)"
+                }
+            }
+        },
+        "abort": {
+            "already_configured": "This device is already configured"
+        },
+        "error": {
+            "invalid_addresses": "Invalid address format, use: 1,2,3 or 1-5"
+        }
+    },
+    "selector": {
+        "sensor_type": {
+            "options": {
+                "fmcw": "FMCW Millimeter Wave Radar (MSA203D/MSA237D)",
+                "ir": "Passive Infrared PIR (MSA236D/MSA238D)"
+            }
+        }
+    }
+}

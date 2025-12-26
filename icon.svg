@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256">
+  <defs>
+    <!-- 主渐变 - 蓝色渐变 -->
+    <linearGradient id="blueGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4FC3F7;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#2196F3;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1565C0;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- 发光效果 -->
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- 透明背景 - 无填充 -->
+  
+  <!-- U 字母主体 - 蓝色渐变填充 -->
+  <g filter="url(#glow)">
+    <path d="M70 55 
+             L70 155 
+             C70 200 95 225 128 225 
+             C161 225 186 200 186 155 
+             L186 55" 
+          fill="none" 
+          stroke="url(#blueGradient)" 
+          stroke-width="28" 
+          stroke-linecap="round" 
+          stroke-linejoin="round"/>
+  </g>
+  
+  <!-- 雷达波纹效果 - 蓝色 -->
+  <g>
+    <!-- 左侧第一层波纹 -->
+    <path d="M128 35 
+             C85 35 50 70 50 113" 
+          fill="none" 
+          stroke="url(#blueGradient)" 
+          stroke-width="6" 
+          stroke-linecap="round"
+          opacity="0.9"/>
+    
+    <!-- 左侧第二层波纹 -->
+    <path d="M128 18 
+             C72 18 30 60 30 113" 
+          fill="none" 
+          stroke="url(#blueGradient)" 
+          stroke-width="5" 
+          stroke-linecap="round"
+          opacity="0.6"/>
+    
+    <!-- 右侧第一层波纹 -->
+    <path d="M128 35 
+             C171 35 206 70 206 113" 
+          fill="none" 
+          stroke="url(#blueGradient)" 
+          stroke-width="6" 
+          stroke-linecap="round"
+          opacity="0.9"/>
+    
+    <!-- 右侧第二层波纹 -->
+    <path d="M128 18 
+             C184 18 226 60 226 113" 
+          fill="none" 
+          stroke="url(#blueGradient)" 
+          stroke-width="5" 
+          stroke-linecap="round"
+          opacity="0.6"/>
+  </g>
+  
+  <!-- 中心感应点 -->
+  <circle cx="128" cy="42" r="8" fill="url(#blueGradient)"/>
+</svg>

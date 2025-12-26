@@ -1,0 +1,32 @@
+{
+    "config": {
+        "step": {
+            "user": {
+                "title": "添加迈睿感应器",
+                "description": "配置迈睿人体存在感应器 (通过网络转串口连接)\n地址格式: 1,2,3 或 1-5 或 1,3-5,7",
+                "data": {
+                    "name": "名称",
+                    "host": "主机地址 (网络转串口设备IP)",
+                    "port": "端口",
+                    "device_addresses": "Modbus 地址 (支持: 1,2,3 或 1-5)",
+                    "sensor_type": "传感器类型",
+                    "poll_interval": "轮询间隔 (秒)"
+                }
+            }
+        },
+        "abort": {
+            "already_configured": "该设备已配置"
+        },
+        "error": {
+            "invalid_addresses": "地址格式无效，请使用: 1,2,3 或 1-5"
+        }
+    },
+    "selector": {
+        "sensor_type": {
+            "options": {
+                "fmcw": "FMCW 毫米波雷达 (MSA203D/MSA237D)",
+                "ir": "红外 PIR (MSA236D/MSA238D)"
+            }
+        }
+    }
+}
