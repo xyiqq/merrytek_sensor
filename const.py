@@ -18,11 +18,11 @@ REG_LIGHT_THRESHOLD = 0x0003  # Light threshold
 REG_DEVICE_ADDRESS = 0x0004   # Device Modbus address
 
 # Sensor types
-SENSOR_TYPE_FMCW = "fmcw"     # MSA203D/MSA237D - Millimeter wave radar
+SENSOR_TYPE_FMCW = "fmcw"     # MSA203D/MSA237D - 24GHz Millimeter wave radar
 SENSOR_TYPE_IR = "ir"         # MSA236D/MSA238D - Passive infrared
 
 SENSOR_TYPES = {
-    SENSOR_TYPE_FMCW: "FMCW 毫米波雷达 (MSA203D/MSA237D)",
+    SENSOR_TYPE_FMCW: "FMCW 24GHz毫米波雷达 (MSA203D/MSA237D)",
     SENSOR_TYPE_IR: "红外 PIR (MSA236D/MSA238D)",
 }
 

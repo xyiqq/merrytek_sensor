@@ -24,7 +24,7 @@
     "selector": {
         "sensor_type": {
             "options": {
-                "fmcw": "FMCW 毫米波雷达 (MSA203D/MSA237D)",
+                "fmcw": "FMCW 24GHz毫米波雷达 (MSA203D/MSA237D)",
                 "ir": "红外 PIR (MSA236D/MSA238D)"
             }
         }

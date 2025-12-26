@@ -24,7 +24,7 @@
     "selector": {
         "sensor_type": {
             "options": {
-                "fmcw": "FMCW Millimeter Wave Radar (MSA203D/MSA237D)",
+                "fmcw": "FMCW 24GHz Millimeter Wave Radar (MSA203D/MSA237D)",
                 "ir": "Passive Infrared PIR (MSA236D/MSA238D)"
             }
         }
